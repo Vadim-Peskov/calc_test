@@ -87,5 +87,4 @@ body {
 .calc__btn--col4 {
   grid-column: span 4;
   height: 50px;
-  /*background: #09464f;*/
 }
