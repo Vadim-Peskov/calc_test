@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #969696;
+  background: #0b0b0b;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.calc {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  background: #121116;
+  border-radius: 9px;
+}
+
+.calc__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 74px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  font-weight: 600;
+  color: #b8b8b8;
+  background: #060608;
+  border-radius: 3px;
+}
+
+.calc__operator {
+  font-size: 13px;
+  color: #828282;
+}
+
+.calc__num {
+  font-size: 16px;
+}
+
+.calc__btns-wrap {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
+.calc__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  background: #202125;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calc__btn:hover {
+  background: #414952;
+  transition: 0.2s;
+}
+
+.calc__btn--col2 {
+  grid-column: span 2;
+}
+
+.calc__btn--col4 {
+  grid-column: span 4;
+  height: 50px;
+  /*background: #09464f;*/
+}
